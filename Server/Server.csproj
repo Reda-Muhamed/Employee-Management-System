@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+	  <!-- Microsoft.AspNetCore.Authentication.JwtBearer is used for JWT authentication in ASP.NET Core applications. -->
+  
+  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.6">
+	  <PrivateAssets>all</PrivateAssets>
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+  </PackageReference>
+  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.6" />
+	  <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.0.1" />
+
+	  <!-- Microsoft.EntityFrameworkCore.SqlServer is the SQL Server provider for Entity Framework Core. -->
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.6">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <!-- Microsoft.EntityFrameworkCore.Tools provides command-line tools for Entity Framework Core. -->
+	  <!-- Microsoft.IdentityModel.Tokens is used for handling JWT tokens and security tokens in .NET applications. -->
+	  <!-- System.IdentityModel.Tokens.Jwt is used for creating and validating JWT tokens in .NET applications. -->
+	  <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.12" />
+	  
+	  <!-- Swashbuckle.AspNetCore.Filters is used to add examples and other metadata to Swagger documentation in ASP.NET Core applications. -->
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Base Library\Base Library.csproj" />
+    <ProjectReference Include="..\Server Library\Server Library.csproj" />
+  </ItemGroup>
+
+</Project>

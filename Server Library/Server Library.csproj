@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Server_Library</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="BCrypt.Net-Next" version="4.0.3" />
+		<!-- BCrypt.Net-Next is a library for hashing passwords using the BCrypt algorithm. -->
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+		<!-- Microsoft.AspNetCore.Authentication.JwtBearer is used for JWT authentication in ASP.NET Core applications. -->
+
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
+		
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.6" />
+
+		<!-- Microsoft.EntityFrameworkCore.SqlServer is the SQL Server provider for Entity Framework Core. -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.6">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<!-- Microsoft.EntityFrameworkCore.Tools provides command-line tools for Entity Framework Core. -->
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.0.1" />
+		
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Base Library\Base Library.csproj" />
+	</ItemGroup>
+</Project>
